@@ -1,7 +1,7 @@
 #Assignment 5
 ncbi_ids <- c("HQ433692.1","HQ433694.1","HQ433691.1") #define ncbi id vectors
 library(rentrez) #loading the library
-Bburg<-entrez_fetch(db = "nuccore", id = ncbi_ids, rettype = "fasta") #download data of the specific ncbi identifiers on the NCBI database
+Bburg<-entrez_fetch(db = "nuccore", id = ncbi_ids, rettype = "fasta") #download data of the specific ncbi identifiers on the NCBI database from the nuccore database
 #this contains 3 different sequences of the 16S gene of Borrelia burgdorferi (bacteria that causes Lyme Disease)
 
 Bburg #checking it

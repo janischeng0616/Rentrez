@@ -458,7 +458,7 @@ Table #showing the table</code></pre>
 </div>
 <div id="final-table-showing-gc-content-for-each-sequence-id" class="section level3">
 <h3>Final table showing GC content for each sequence ID</h3>
-<pre class="r"><code>Final_Table = transmute(SData, Sequence_ID = gsub(&quot;\\s.*&quot;,&quot;&quot;, SData$Name), GC_Content=SData$GC_Content) #remaking the dataframe so that it contains the sequence ID and the GC content
+<pre class="r"><code>Final_Table = transmute(SData, Sequence_ID = gsub(&quot;\\s.*&quot;,&quot;&quot;, SData$Name), GC_Content=SData$GC_Content) #remaking the dataframe so that it contains the sequence ID and prints the GC%
 Final_Table #showing it</code></pre>
 <pre><code>##   Sequence_ID GC_Content
 ## 1 &gt;HQ433692.1    44.28 %

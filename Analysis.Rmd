@@ -48,7 +48,7 @@ list(SData$Sequence) #list out the sequences
 
 ### The number of each nucleotide as a table for each of the three sequences
 ```{r}
-Table <- transmute(SData, Sequence_ID = gsub("\\s.*","", SData$Name), A_Count = SData$A, T_Count = SData$T, G_Count = SData$G, C_Count = SData$C ) #remaking the dataframe so that it prints the Sequence ID and the nucleotide counts
+Table <- transmute(SData, Sequence_ID = gsub("\\s.*","", SData$Name), A_Count = SData$A, T_Count = SData$T, G_Count = SData$G, C_Count = SData$C ) #remaking the dataframe so that it prints the Sequence ID (removing all the words after the first space) and the nucleotide counts
 Table #showing the table
 ```
 

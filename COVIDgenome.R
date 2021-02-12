@@ -20,7 +20,7 @@ for (i in 1:nchar(Sprotein)){ #for loop that runs through every character in the
     Sprotein <- sub("\\w$", "", Sprotein) #remove one bp from the end
   }
 } #this way, every character before and after the target positions are replaced with nothing (therefore, removed)
-#other ways of doing it: substr (), DNAstring() in biostrings
+#other ways of doing it: substr (COVIDSeq, 21563, 25384), or DNAstring() in biostrings
 
 Sprotein #look at the sequence
 #sprotein should be 3822 bp, checking if it is TRUE or FLASE
